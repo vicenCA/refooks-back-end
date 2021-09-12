@@ -1,0 +1,23 @@
+@api = http://localhost:3000/food
+
+###
+GET {{api}} HTTP/1.1
+
+### POST
+
+POST {{api}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre_alimento": "Durazno",
+    "nombre_cientifico": "Prunus persica",
+    "tipo_alimento": "Fruta",
+    "subtipo_alimento": "Fruta",
+    "origen_tipo": "duraznero",
+    "origen_mundo": "Afganistán, China, Irán",
+    "produccion": 0
+}
+
+### GET ID
+
+GET {{api}}/1AF5C858-C2B0-4EE8-B260-C00DC0A9271A HTTP/1.1

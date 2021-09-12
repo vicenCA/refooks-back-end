@@ -1,0 +1,20 @@
+@api = http://localhost:3000/user
+
+POST {{api}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre_usuario": "Vicente",
+    "apellido_usuario": "Cisternas Acosta",
+    "alias_usuario": "vicentecisternas",
+    "correo_electronico": "vicente@gmail.com",
+    "clave_usuario": "vicentito99"
+}
+
+###
+
+GET {{api}} HTTP/1.1
+
+### GET ID
+
+GET {{api}}/elias@gmail.com HTTP/1.1
